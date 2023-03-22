@@ -1,7 +1,6 @@
 {
-  "name": "notes-app-back-end",
+  "name": "clear",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start-prod": "NODE_ENV=production node ./src/server.js",
@@ -20,5 +19,14 @@
   "dependencies": {
     "@hapi/hapi": "^21.3.0",
     "nanoid": "^3.3.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganangadiw/notes-app-back-end.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ganangadiw/notes-app-back-end/issues"
+  },
+  "homepage": "https://github.com/ganangadiw/notes-app-back-end#readme",
+  "description": ""
 }
