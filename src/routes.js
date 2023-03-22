@@ -1,5 +1,7 @@
+const {
+  addNoteHandler, getAllNotesHandler, getNoteByIdHandler, deleteNoteByIdHandler,
 // eslint-disable-next-line import/extensions
-const { addNoteHandler, getAllNotesHandler, getNoteByIdHandler } = require('./handler.js');
+} = require('./handler.js');
 
 const routes = [
   {
@@ -16,6 +18,11 @@ const routes = [
     method: 'GET',
     path: '/notes/{id}',
     handler: getNoteByIdHandler,
+  },
+  {
+    method: 'DELETE',
+    path: '/notes/{id}',
+    handler: deleteNoteByIdHandler,
   },
 ];
 
