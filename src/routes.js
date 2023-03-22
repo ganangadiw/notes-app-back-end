@@ -1,21 +1,21 @@
 // eslint-disable-next-line import/extensions
-const { addNotehandler, getAllNotesHandler, getNoteByIdHandler } = require('./handler.js');
+const { addNoteHandler, getAllNotesHandler, getNoteByIdHandler } = require('./handler.js');
 
 const routes = [
   {
     method: 'POST',
     path: '/notes',
-    handler: () => addNotehandler,
+    handler: addNoteHandler,
   },
   {
     method: 'GET',
     path: '/notes',
-    handler: () => getAllNotesHandler,
+    handler: getAllNotesHandler,
   },
   {
     method: 'GET',
     path: '/notes/{id}',
-    handler: () => getNoteByIdHandler,
+    handler: getNoteByIdHandler,
   },
 ];
 
